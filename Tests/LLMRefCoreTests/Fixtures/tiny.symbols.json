@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "formatVersion": { "major": 0, "minor": 6, "patch": 0 },
+    "generator": "fixture"
+  },
+  "module": {
+    "name": "Tiny",
+    "platform": {}
+  },
+  "symbols": [
+    {
+      "accessLevel": "public",
+      "kind": { "identifier": "swift.enum", "displayName": "Enumeration" },
+      "identifier": { "precise": "s:4Tiny6BoxesO", "interfaceLanguage": "swift" },
+      "pathComponents": ["Boxes"],
+      "names": { "title": "Boxes" },
+      "declarationFragments": [
+        { "kind": "keyword", "spelling": "enum" },
+        { "kind": "text", "spelling": " " },
+        { "kind": "identifier", "spelling": "Boxes" }
+      ],
+      "docComment": {
+        "lines": [
+          { "text": "A trivial container namespace." }
+        ]
+      }
+    },
+    {
+      "accessLevel": "public",
+      "kind": { "identifier": "swift.type.method", "displayName": "Type Method" },
+      "identifier": { "precise": "s:4Tiny6BoxesO5emptyACyF", "interfaceLanguage": "swift" },
+      "pathComponents": ["Boxes", "empty()"],
+      "names": { "title": "empty()" },
+      "declarationFragments": [
+        { "kind": "keyword", "spelling": "static" },
+        { "kind": "text", "spelling": " " },
+        { "kind": "keyword", "spelling": "func" },
+        { "kind": "text", "spelling": " " },
+        { "kind": "identifier", "spelling": "empty" },
+        { "kind": "text", "spelling": "() -> " },
+        { "kind": "typeIdentifier", "spelling": "Int" }
+      ],
+      "docComment": {
+        "lines": [
+          { "text": "Returns the empty box count." },
+          { "text": "" },
+          { "text": "- Returns: Always zero." }
+        ]
+      }
+    },
+    {
+      "accessLevel": "internal",
+      "kind": { "identifier": "swift.method", "displayName": "Instance Method" },
+      "identifier": { "precise": "s:4Tiny6BoxesO6secretSiyF", "interfaceLanguage": "swift" },
+      "pathComponents": ["Boxes", "secret()"],
+      "names": { "title": "secret()" },
+      "declarationFragments": [
+        { "kind": "keyword", "spelling": "func" },
+        { "kind": "text", "spelling": " " },
+        { "kind": "identifier", "spelling": "secret" },
+        { "kind": "text", "spelling": "() -> " },
+        { "kind": "typeIdentifier", "spelling": "Int" }
+      ]
+    }
+  ],
+  "relationships": []
+}

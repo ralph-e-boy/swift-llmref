@@ -67,7 +67,7 @@ struct GenerateLLMRef: CommandPlugin {
 
             let process = Process()
             process.executableURL = URL(fileURLWithPath: tool.path.string)
-            process.arguments = [symbolsPath.string, outputPath.string]
+            process.arguments = [symbolsPath.string, "-o", outputPath.string]
             try process.run()
             process.waitUntilExit()
 

@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "formatVersion": { "major": 0, "minor": 6, "patch": 0 },
+    "generator": "fixture"
+  },
+  "module": {
+    "name": "Cases",
+    "platform": {}
+  },
+  "symbols": [
+    {
+      "accessLevel": "public",
+      "kind": { "identifier": "swift.enum", "displayName": "Enumeration" },
+      "identifier": { "precise": "s:5Cases5SmallO", "interfaceLanguage": "swift" },
+      "pathComponents": ["Small"],
+      "names": { "title": "Small" },
+      "declarationFragments": [
+        { "kind": "keyword", "spelling": "enum" },
+        { "kind": "text", "spelling": " " },
+        { "kind": "identifier", "spelling": "Small" }
+      ],
+      "docComment": { "lines": [ { "text": "An enum with too few cases to collapse." } ] }
+    },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5SmallO1aA", "interfaceLanguage": "swift" }, "pathComponents": ["Small", "alpha"], "names": { "title": "alpha" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "alpha" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5SmallO1bA", "interfaceLanguage": "swift" }, "pathComponents": ["Small", "beta"], "names": { "title": "beta" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "beta" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5SmallO1cA", "interfaceLanguage": "swift" }, "pathComponents": ["Small", "gamma"], "names": { "title": "gamma" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "gamma" } ] },
+
+    {
+      "accessLevel": "public",
+      "kind": { "identifier": "swift.enum", "displayName": "Enumeration" },
+      "identifier": { "precise": "s:5Cases5LargeO", "interfaceLanguage": "swift" },
+      "pathComponents": ["Large"],
+      "names": { "title": "Large" },
+      "declarationFragments": [
+        { "kind": "keyword", "spelling": "enum" },
+        { "kind": "text", "spelling": " " },
+        { "kind": "identifier", "spelling": "Large" }
+      ],
+      "docComment": { "lines": [ { "text": "An enum whose undocumented cases should collapse." } ] }
+    },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5LargeO01a", "interfaceLanguage": "swift" }, "pathComponents": ["Large", "amber"], "names": { "title": "amber" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "amber" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5LargeO02b", "interfaceLanguage": "swift" }, "pathComponents": ["Large", "blue"], "names": { "title": "blue" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "blue" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5LargeO03c", "interfaceLanguage": "swift" }, "pathComponents": ["Large", "crimson"], "names": { "title": "crimson" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "crimson" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5LargeO04d", "interfaceLanguage": "swift" }, "pathComponents": ["Large", "denim"], "names": { "title": "denim" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "denim" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5LargeO05e", "interfaceLanguage": "swift" }, "pathComponents": ["Large", "ecru"], "names": { "title": "ecru" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "ecru" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5LargeO06f", "interfaceLanguage": "swift" }, "pathComponents": ["Large", "fawn"], "names": { "title": "fawn" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "fawn" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5LargeO07g", "interfaceLanguage": "swift" }, "pathComponents": ["Large", "gold"], "names": { "title": "gold" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "gold" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5LargeO08h", "interfaceLanguage": "swift" }, "pathComponents": ["Large", "henna"], "names": { "title": "henna" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "henna" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5LargeO09i", "interfaceLanguage": "swift" }, "pathComponents": ["Large", "indigo"], "names": { "title": "indigo" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "indigo" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5LargeO10j", "interfaceLanguage": "swift" }, "pathComponents": ["Large", "jade"], "names": { "title": "jade" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "jade" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5LargeO11k", "interfaceLanguage": "swift" }, "pathComponents": ["Large", "khaki"], "names": { "title": "khaki" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "khaki" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5LargeO12l", "interfaceLanguage": "swift" }, "pathComponents": ["Large", "lavender"], "names": { "title": "lavender" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "lavender" } ] },
+
+    {
+      "accessLevel": "public",
+      "kind": { "identifier": "swift.enum", "displayName": "Enumeration" },
+      "identifier": { "precise": "s:5Cases5MixedO", "interfaceLanguage": "swift" },
+      "pathComponents": ["Mixed"],
+      "names": { "title": "Mixed" },
+      "declarationFragments": [
+        { "kind": "keyword", "spelling": "enum" },
+        { "kind": "text", "spelling": " " },
+        { "kind": "identifier", "spelling": "Mixed" }
+      ],
+      "docComment": { "lines": [ { "text": "An enum where a documented case sits in the middle of the alphabetical run." } ] }
+    },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5MixedO01a", "interfaceLanguage": "swift" }, "pathComponents": ["Mixed", "aardvark"], "names": { "title": "aardvark" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "aardvark" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5MixedO02b", "interfaceLanguage": "swift" }, "pathComponents": ["Mixed", "badger"], "names": { "title": "badger" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "badger" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5MixedO03c", "interfaceLanguage": "swift" }, "pathComponents": ["Mixed", "cat"], "names": { "title": "cat" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "cat" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5MixedO04d", "interfaceLanguage": "swift" }, "pathComponents": ["Mixed", "deer"], "names": { "title": "deer" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "deer" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5MixedO05e", "interfaceLanguage": "swift" }, "pathComponents": ["Mixed", "eagle"], "names": { "title": "eagle" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "eagle" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5MixedO06f", "interfaceLanguage": "swift" }, "pathComponents": ["Mixed", "fox"], "names": { "title": "fox" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "fox" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5MixedO07g", "interfaceLanguage": "swift" }, "pathComponents": ["Mixed", "gibbon"], "names": { "title": "gibbon" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "gibbon" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5MixedO08h", "interfaceLanguage": "swift" }, "pathComponents": ["Mixed", "hare"], "names": { "title": "hare" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "hare" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5MixedO09i", "interfaceLanguage": "swift" }, "pathComponents": ["Mixed", "ibis"], "names": { "title": "ibis" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "ibis" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5MixedO10j", "interfaceLanguage": "swift" }, "pathComponents": ["Mixed", "jaguar"], "names": { "title": "jaguar" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "jaguar" } ], "docComment": { "lines": [ { "text": "The documented one — should not collapse." } ] } },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5MixedO11k", "interfaceLanguage": "swift" }, "pathComponents": ["Mixed", "koala"], "names": { "title": "koala" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "koala" } ] },
+    { "accessLevel": "public", "kind": { "identifier": "swift.enum.case", "displayName": "Case" }, "identifier": { "precise": "s:5Cases5MixedO12l", "interfaceLanguage": "swift" }, "pathComponents": ["Mixed", "lemur"], "names": { "title": "lemur" }, "declarationFragments": [ { "kind": "keyword", "spelling": "case" }, { "kind": "text", "spelling": " " }, { "kind": "identifier", "spelling": "lemur" } ] }
+  ],
+  "relationships": []
+}

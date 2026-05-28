@@ -16,6 +16,18 @@ public enum LLMRefRenderer {
         "swift.func.op": 7
     ]
 
+    /// When this many or more contiguous undocumented enum cases appear in a
+    /// single type, collapse them into one summary line.  Driven by the
+    /// observation that doc-less case lists (e.g. enums modelling palettes,
+    /// glyph sets, or icon catalogues) can dominate a module's reference and
+    /// crowd out the symbols a reader is actually trying to find.  Cases with
+    /// any doc-comment are never collapsed.
+    private static let collapseEnumCaseThreshold = 10
+
+    /// How many sample names to surface in the collapse-summary line.  Five
+    /// is enough to convey naming style without becoming a list.
+    private static let collapseEnumCaseSamples = 5
+
     /// Render a SymbolGraph as a flat, LLM-optimized markdown reference.
     public static func render(_ graph: SymbolGraph) -> String {
         let publicSymbols = graph.symbols.filter { $0.accessLevel == "public" }
@@ -120,10 +132,59 @@ public enum LLMRefRenderer {
             out += doc + "\n\n"
         }
         let sorted = members.sorted { memberKey($0) < memberKey($1) }
-        for m in sorted {
-            emitMember(m, into: &out)
-        }
+        emitMembersWithCaseCollapse(sorted, into: &out)
         if !sorted.isEmpty { out += "\n" }
+    }
+
+    /// Walk a presorted member list and emit each one, except that contiguous
+    /// runs of undocumented enum cases ≥ `collapseEnumCaseThreshold` get
+    /// collapsed into a single summary line.  The presorted input means cases
+    /// already sit together (they share `memberOrder` rank), so a contiguous
+    /// run is the natural unit to collapse.  Any case carrying a doc-comment
+    /// is treated as non-collapsible and renders in full at its proper
+    /// position, breaking the run if necessary.
+    private static func emitMembersWithCaseCollapse(
+        _ sorted: [SymbolGraph.Symbol],
+        into out: inout String
+    ) {
+        var run: [SymbolGraph.Symbol] = []
+
+        func flushRun() {
+            guard !run.isEmpty else { return }
+            if run.count >= collapseEnumCaseThreshold {
+                emitCollapsedCases(run, into: &out)
+            } else {
+                for m in run { emitMember(m, into: &out) }
+            }
+            run.removeAll(keepingCapacity: true)
+        }
+
+        for m in sorted {
+            if isCollapsibleEnumCase(m) {
+                run.append(m)
+            } else {
+                flushRun()
+                emitMember(m, into: &out)
+            }
+        }
+        flushRun()
+    }
+
+    private static func isCollapsibleEnumCase(_ s: SymbolGraph.Symbol) -> Bool {
+        guard s.kind.identifier == "swift.enum.case" else { return false }
+        let doc = renderDoc(s.docComment)
+        return doc.isEmpty
+    }
+
+    private static func emitCollapsedCases(
+        _ cases: [SymbolGraph.Symbol],
+        into out: inout String
+    ) {
+        let samples = cases.prefix(collapseEnumCaseSamples)
+            .map { "`\($0.names.title)`" }
+            .joined(separator: ", ")
+        let ellipsis = cases.count > collapseEnumCaseSamples ? ", …" : ""
+        out += "- _\(cases.count) undocumented enum cases (sample: \(samples)\(ellipsis))_\n"
     }
 
     private static func emitMember(_ sym: SymbolGraph.Symbol, into out: inout String) {
